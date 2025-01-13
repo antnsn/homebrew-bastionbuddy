@@ -41,20 +41,20 @@ jobs:
 
             on_macos do
               if Hardware::CPU.arm?
-                url "https://github.com/antnsn/BastionBuddy/releases/download/#{version}/bastionbuddy_darwin_arm64.zip"
+                url "https://github.com/antnsn/BastionBuddy/releases/download/${{ github.event.client_payload.version }}/bastionbuddy_darwin_arm64.zip"
                 sha256 "${{ env.darwin_arm64_sha }}"
               else
-                url "https://github.com/antnsn/BastionBuddy/releases/download/#{version}/bastionbuddy_darwin_amd64.zip"
+                url "https://github.com/antnsn/BastionBuddy/releases/download/${{ github.event.client_payload.version }}/bastionbuddy_darwin_amd64.zip"
                 sha256 "${{ env.darwin_amd64_sha }}"
               end
             end
 
             on_linux do
               if Hardware::CPU.arm?
-                url "https://github.com/antnsn/BastionBuddy/releases/download/#{version}/bastionbuddy_linux_arm64.zip"
+                url "https://github.com/antnsn/BastionBuddy/releases/download/${{ github.event.client_payload.version }}/bastionbuddy_linux_arm64.zip"
                 sha256 "${{ env.linux_arm64_sha }}"
               else
-                url "https://github.com/antnsn/BastionBuddy/releases/download/#{version}/bastionbuddy_linux_amd64.zip"
+                url "https://github.com/antnsn/BastionBuddy/releases/download/${{ github.event.client_payload.version }}/bastionbuddy_linux_amd64.zip"
                 sha256 "${{ env.linux_amd64_sha }}"
               end
             end
