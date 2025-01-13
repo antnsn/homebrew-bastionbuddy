@@ -1,25 +1,25 @@
 class Bastionbuddy < Formula
   desc "CLI tool for managing Azure Bastion connections"
   homepage "https://github.com/antnsn/BastionBuddy"
-  version "v1.0.0"
+  version "v1.0.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/antnsn/BastionBuddy/releases/download/v1.0.0/bastionbuddy_darwin_arm64.tar.gz"
-      sha256 "b4f62e73e4896400b78b08e15c6251fcca5b5f032030fa338c02a68e1b3576fc"
+      url "https://github.com/antnsn/BastionBuddy/releases/download/v1.0.1/bastionbuddy_darwin_arm64.tar.gz"
+      sha256 "35667dd8e9baaf0ccfae4ae08b1a734b289d7369c8d65c048f077666ef13482b"
     else
-      url "https://github.com/antnsn/BastionBuddy/releases/download/v1.0.0/bastionbuddy_darwin_amd64.tar.gz"
-      sha256 "bd5be5536073b1040cb153d0ee7f00c8be6c4176e55ca4327d8b326905ced2ac"
+      url "https://github.com/antnsn/BastionBuddy/releases/download/v1.0.1/bastionbuddy_darwin_amd64.tar.gz"
+      sha256 "369b7f3542e307045d8f4c2072df46239dc208846cf40e664e3d12f746d6923b"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/antnsn/BastionBuddy/releases/download/v1.0.0/bastionbuddy_linux_arm64.tar.gz"
-      sha256 "53f263ae4db3399ecaf6c7efb882291ab8d8e087790bfbc187ce05ac6a22ac47"
+      url "https://github.com/antnsn/BastionBuddy/releases/download/v1.0.1/bastionbuddy_linux_arm64.tar.gz"
+      sha256 "55d756e52e4713255d0032f628c86b474d753c3beaa5e1103adf87aba73e235b"
     else
-      url "https://github.com/antnsn/BastionBuddy/releases/download/v1.0.0/bastionbuddy_linux_amd64.tar.gz"
-      sha256 "e26a71feb8b493e49db7adf9d246b259684d7d6f85f7bae93ca25bcbee43a794"
+      url "https://github.com/antnsn/BastionBuddy/releases/download/v1.0.1/bastionbuddy_linux_amd64.tar.gz"
+      sha256 "742e000bd9ede0a85ebbe9bf3c5c05b556bc2cfa615ed9526b0095141ec4c945"
     end
   end
 
