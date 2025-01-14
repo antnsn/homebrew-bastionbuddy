@@ -6,20 +6,20 @@ class Bastionbuddy < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/antnsn/BastionBuddy/releases/download/v1.0.1/bastionbuddy_darwin_arm64.tar.gz"
-      sha256 "234fcbdee674b3bd43dad241ff7b83dd1bdb71451bbc6248f0458c99b210a931"
+      sha256 "3475d37c70fbe39067cf647e4f566e45fe346e74b370780b6c10fcbfc9c3976a"
     else
       url "https://github.com/antnsn/BastionBuddy/releases/download/v1.0.1/bastionbuddy_darwin_amd64.tar.gz"
-      sha256 "8037aefc1440904364a41eaa06e1c5a9c9ed7932f784a5cda9d27c1d7d52c580"
+      sha256 "d28637aef559f8de8cc6cb0c0a63a44b0609ebb1b2877633ef308425d57695b4"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/antnsn/BastionBuddy/releases/download/v1.0.1/bastionbuddy_linux_arm64.tar.gz"
-      sha256 "e6aa17f082ec1e1637edf5f22ded8f9ebc0089249245aaf50d6cf4bd1d9de5d8"
+      sha256 "6a97259bd71dba1c809ff2717b9474b406cb2acceb1ab7b08860bb1514d800b6"
     else
       url "https://github.com/antnsn/BastionBuddy/releases/download/v1.0.1/bastionbuddy_linux_amd64.tar.gz"
-      sha256 "8998fd1fab337c7d25af8b4d937e79ea0a39a30d8741e98d9dcf837240e0fb32"
+      sha256 "67b95e4979e78c2b84b4f8eda62028f52018d21185d03c8f6cb3f4e9aafa18d0"
     end
   end
 
